@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='header'>
+        예산 계산기
+      </div>
+      <div className='container'>
+        <div className='input'>
+          지출 항목
+          <input type='text' className=''>
+          </input>
+          비용
+          <input type='text' className=''>
+          </input>
+          <button>제출</button>
+        </div>
+        <div className='list'>
+          <div>지출 목록</div>
+          <div className='list-item'>
+            <div className='value'>띠뇨 괴롭히기</div>
+            <div className=''>5000</div>
+            <div className='func-btns'>
+              <button className='edit'>수정</button>
+              <button className='delete'>삭제</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div className='total'>
+        총 지출 : 
+      </div>
     </div>
   );
 }
