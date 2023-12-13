@@ -7,7 +7,7 @@ function App() {
       <div className='header'>
         예산 계산기
       </div>
-      <div className='container'>
+      <div className=''>
         <div className='input'>
           지출 항목
           <input type='text' className=''>
